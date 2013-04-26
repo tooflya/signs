@@ -31,6 +31,7 @@ public class ArchiementsScreen extends Screen {
 	private static float POSITION_ICON_PADDING_Y;
 	private static float POSITION_ICON_PADDING_X;
 	private static float POSITION_DEVIDERS_PADDING_Y;
+	private static float POSITION_LOCKED_X;
 
 	static {
 		switch (Options.Resolution) {
@@ -44,6 +45,7 @@ public class ArchiementsScreen extends Screen {
 			POSITION_ICON_PADDING_Y = 44f;
 			POSITION_ICON_PADDING_X = 116f;
 			POSITION_DEVIDERS_PADDING_Y = 80f;
+			POSITION_LOCKED_X = 100f;
 			break;
 		case Resolutions.HD:
 			POSITION_BACK_BUTTON_X = 60f;
@@ -55,6 +57,7 @@ public class ArchiementsScreen extends Screen {
 			POSITION_ICON_PADDING_Y = 88f;
 			POSITION_ICON_PADDING_X = 232f;
 			POSITION_DEVIDERS_PADDING_Y = 160f;
+			POSITION_LOCKED_X = 200f;
 			break;
 		}
 	}
@@ -194,7 +197,7 @@ public class ArchiementsScreen extends Screen {
 		for (int i = 0; i < 5; i++) {
 			this.mDeviders.create().setCenterPosition(this.mList.getWidth() / 2, POSITION_DEVIDERS_PADDING_Y + POSITION_LIST_PADDING_Y * i);
 			this.mIcons.create().setCenterPosition(this.mList.getWidth() / 2 - POSITION_ICON_PADDING_X, POSITION_ICON_PADDING_Y + POSITION_LIST_PADDING_Y * i);
-			mLabels.create().setCenterPosition(this.mList.getWidth() / 2 - POSITION_ICON_PADDING_X + 200, POSITION_ICON_PADDING_Y + POSITION_LIST_PADDING_Y * i);
+			mLabels.create().setCenterPosition(this.mList.getWidth() / 2 - POSITION_ICON_PADDING_X + POSITION_LOCKED_X, POSITION_ICON_PADDING_Y + POSITION_LIST_PADDING_Y * i);
 		}
 	}
 

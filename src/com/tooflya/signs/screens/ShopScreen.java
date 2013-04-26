@@ -65,6 +65,10 @@ public class ShopScreen extends Screen {
 	private static float POSITION_STARS_X_3;
 	private static float POSITION_STARS_X_4;
 	private static float POSITION_LIST_PADDING_Y2;
+	private static float A1;
+	private static float A2;
+	private static float A3;
+	private static float MLIST_HEIGHT;
 
 	static {
 		switch (Options.Resolution) {
@@ -96,8 +100,8 @@ public class ShopScreen extends Screen {
 			POSITION_PURCHASED_Y = 50f;
 			POSITION_GET_BACKGROUND_X = 100f;
 			POSITION_GET_BACKGROUND_Y = 50f;
-			POSITION_GET_BUTTON_X = 126f;
-			POSITION_GET_BUTTON_Y = 44f;
+			POSITION_GET_BUTTON_X = 106f;
+			POSITION_GET_BUTTON_Y = 38f;
 			POSITION_NUMBERS_START_PADDING = 65f;
 			POSITION_NUMBERS_X = 12f;
 			POSITION_NUMBERS_Y = 50f;
@@ -106,6 +110,11 @@ public class ShopScreen extends Screen {
 			POSITION_STARS_X_2 = 12f;
 			POSITION_STARS_X_3 = 18f;
 			POSITION_STARS_X_4 = 24f;
+			POSITION_LIST_PADDING_Y2 = 67.45f;
+			A1 = 4f;
+			A2 = 2f;
+			A3 = 13f;
+			MLIST_HEIGHT =  46f * 35f;
 			break;
 		case Resolutions.HD:
 			POSITION_BACK_BUTTON_X = 60f;
@@ -135,8 +144,8 @@ public class ShopScreen extends Screen {
 			POSITION_PURCHASED_Y = 100f;
 			POSITION_GET_BACKGROUND_X = 200f;
 			POSITION_GET_BACKGROUND_Y = 100f;
-			POSITION_GET_BUTTON_X = 320f;
-			POSITION_GET_BUTTON_Y = 100f;
+			POSITION_GET_BUTTON_X = 252f;
+			POSITION_GET_BUTTON_Y = 95f;
 			POSITION_NUMBERS_START_PADDING = 130f;
 			POSITION_NUMBERS_X = 24f;
 			POSITION_NUMBERS_Y = 105f;
@@ -145,7 +154,11 @@ public class ShopScreen extends Screen {
 			POSITION_STARS_X_2 = 24f;
 			POSITION_STARS_X_3 = 36f;
 			POSITION_STARS_X_4 = 48f;
-			POSITION_LIST_PADDING_Y2 = 163.5f;
+			POSITION_LIST_PADDING_Y2 = 160f;
+			A1 = 7f;
+			A2 = 5f;
+			A3 = 26f;
+			MLIST_HEIGHT =  46f * 80f;
 			break;
 		}
 	}
@@ -231,7 +244,7 @@ public class ShopScreen extends Screen {
 
 		this.mStarsCountNumbers = new ArrayEntityManager<Entity>(5, new Entity(Resources.mStarsNumbersTextureRegion, this.mCoinsPanel));
 
-		this.mList = new Rectangle(Options.cameraCenterX, 0, Options.cameraWidth, 46f * 80f) {
+		this.mList = new Rectangle(Options.cameraCenterX, 0, Options.screenWidth, MLIST_HEIGHT) {
 
 			private float mLastTouchY;
 			private float mLastPositionY;
@@ -360,12 +373,12 @@ public class ShopScreen extends Screen {
 				text.setCenterPosition(this.mList.getWidth() / 2 - POSITION_TEXT_PADDING_X_1, POSITION_TEXT_PADDING_Y_1 + POSITION_LIST_PADDING_Y * i);
 
 				final Entity number = this.mTextesNumbers.create();
-				number.setPosition(text.getX() + text.getWidth() + 7f, text.getY() - 5f, true);
+				number.setPosition(text.getX() + text.getWidth() + A1, text.getY() - A2, true);
 				number.setCurrentTileIndex(this.mTextes1.getCount() < 10 ? this.mTextes1.getCount() : 1);
 
 				if (this.mTextes1.getCount() >= 10) {
 					final Entity number2 = this.mTextesNumbers.create();
-					number2.setPosition(text.getX() + text.getWidth() + 26f, text.getY() - 5f, true);
+					number2.setPosition(text.getX() + text.getWidth() + A3, text.getY() - A2, true);
 					number2.setCurrentTileIndex((this.mTextes1.getCount() - 10));
 				}
 			} else if (i < 20) {
