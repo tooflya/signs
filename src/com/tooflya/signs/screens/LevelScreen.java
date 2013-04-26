@@ -102,8 +102,8 @@ public class LevelScreen extends Screen {
 			POSITION_TIMER_NUMBER_Y = 67f;
 			POSITION_PANEL_STARS_X_1 = 42f;
 			POSITION_PANEL_STARS_X_2 = 5f;
-			POSITION_PANEL_STARS_Y_1 = 30f;
-			POSITION_PANEL_STARS_Y_2 = 30f;
+			POSITION_PANEL_STARS_Y_1 = 40f;
+			POSITION_PANEL_STARS_Y_2 = 10f;
 			POSITION_PANEL_ANIMATION_X = 180f;
 			POSITION_PANEL_ANIMATION_Y = 120f;
 			POSITION_EXES_ANIMATION_X_1 = 21f;
@@ -152,7 +152,7 @@ public class LevelScreen extends Screen {
 			POSITION_PANEL_STARS_X_1 = 42f;
 			POSITION_PANEL_STARS_X_2 = 10f;
 			POSITION_PANEL_STARS_Y_1 = 80f;
-			POSITION_PANEL_STARS_Y_2 = 80f;
+			POSITION_PANEL_STARS_Y_2 = 20f;
 			POSITION_PANEL_ANIMATION_X = 360f;
 			POSITION_PANEL_ANIMATION_Y = 240f;
 			POSITION_EXES_ANIMATION_X_1 = 38f;
@@ -806,7 +806,7 @@ public class LevelScreen extends Screen {
 					}
 				}
 
-				this.mExes.create().setCenterPosition(POSITION_PANEL_STARS_X_1 + (POSITION_PANEL_STARS_X_2 * ((STARS - FloatMath.floor(STARS / 9) * 9))), POSITION_PANEL_STARS_Y_1 + (POSITION_PANEL_STARS_Y_2 * FloatMath.floor(STARS / 9)));
+				this.mExes.create().setCenterPosition(POSITION_PANEL_STARS_X_1 + (POSITION_PANEL_STARS_X_2 * ((STARS - FloatMath.floor(STARS / 9) * 9))), Options.cameraCenterY + POSITION_PANEL_STARS_Y_1 + (POSITION_PANEL_STARS_Y_2 * FloatMath.floor(STARS / 9)));
 
 				STARS++;
 			}
