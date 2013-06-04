@@ -1,7 +1,13 @@
 package com.tooflya.billing;
 
-import static com.tooflya.billing.C.*;
-
+import static com.tooflya.billing.C.ACTION_NOTIFY;
+import static com.tooflya.billing.C.ACTION_PURCHASE_STATE_CHANGED;
+import static com.tooflya.billing.C.ACTION_RESPONSE_CODE;
+import static com.tooflya.billing.C.INAPP_REQUEST_ID;
+import static com.tooflya.billing.C.INAPP_RESPONSE_CODE;
+import static com.tooflya.billing.C.INAPP_SIGNATURE;
+import static com.tooflya.billing.C.INAPP_SIGNED_DATA;
+import static com.tooflya.billing.C.NOTIFICATION_ID;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
