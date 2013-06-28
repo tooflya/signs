@@ -297,7 +297,7 @@ public class ScreenManager {
 	/**
 	 * @return
 	 */
-	public Screen getCurrent() throws NullPointerException {
+	public Screen getCurrent() {
 		return screens[Screen.screen];
 	}
 
@@ -312,8 +312,13 @@ public class ScreenManager {
 	 * @param pModalTouch
 	 */
 	public void setChildScreen(final Screen pScreen, final boolean pModalDraw, final boolean pModalUpdate, final boolean pModalTouch) {
-		this.getCurrent().setChildScene(pScreen, pModalDraw, pModalUpdate, pModalTouch);
+		try{this.getCurrent().setChildScene(pScreen, pModalDraw, pModalUpdate, pModalTouch);
 		pScreen.onAttached();
+
+	} catch(NullPointerException ex)
+	{
+		
+	}
 	}
 
 	/**

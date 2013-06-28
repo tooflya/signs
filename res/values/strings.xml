@@ -13,5 +13,46 @@
     <string name="credits_8">Dmitry Shane (@DmitryShane)</string>
     <string name="credits_9">Co-founder, Public Relations Manager</string>
     <string name="credits_10">Anton Korobsky</string>
+    
+    <!-- Resources -->
+    
+    <string name="difficulty_menu_btn_easy">difficulty-menu/difficulty-menu-btn-easy.png</string>
+    <string name="difficulty_menu_btn_expert">difficulty-menu/difficulty-menu-btn-expert.png</string>
+    <string name="difficulty_menu_btn_normal">difficulty-menu/difficulty-menu-btn-normal.png</string>
+    <string name="game_gui_achiv_text_popup">game-gui/game-gui-achiv-text-popup.png</string>
+    <string name="game_gui_btn_roll">game-gui/game-gui-btn-roll.png</string>
+    <string name="game_gui_menu_popup_btn_no">game-gui/game-gui-menu-popup-btn-no.png</string>
+    <string name="game_gui_menu_popup_btn_yes">game-gui/game-gui-menu-popup-btn-yes.png</string>
+    <string name="game_gui_menu_popup_text">game-gui/game-gui-menu-popup-text.png</string>
+    <string name="game_gui_pause_popup_btn">game-gui/game-gui-pause-popup-btn.png</string>
+    <string name="game_gui_pause_popup_text">game-gui/game-gui-pause-popup-text.png</string>
+    <string name="game_gui_restart_popup_text">game-gui/game-gui-restart-popup-text.png</string>
+    <string name="game_gui_score_text">game-gui/game-gui-score-text.png</string>
+    <string name="game_gui_timer_popup_bestscore">game-gui/game-gui-timer-popup-bestscore.png</string>
+    <string name="game_gui_timer_popup_hurryup">game-gui/game-gui-timer-popup-hurryup.png</string>
+    <string name="game_gui_timer_popup_minute">game-gui/game-gui-timer-popup-minute.png</string>
+    <string name="game_gui_timer_text_sec_red">game-gui/game-gui-timer-text-sec-red.png</string>
+    <string name="game_gui_timer_text_sec">game-gui/game-gui-timer-text-sec.png</string>
+    <string name="main_menu_best_score_popup">main-menu/main-menu-best-score-popup.png</string>
+    <string name="main_menu_btn_more">main-menu/main-menu-btn-more.png</string>
+    <string name="main_menu_quit_popup_text">main-menu/main-menu-quit-popup-text.png</string>
+    <string name="popup_end_lvl_btn_taptoplay">popup-end-lvl/popup-end-lvl-btn-taptoplay.png</string>
+    <string name="popup_end_lvl_text_best">popup-end-lvl/popup-end-lvl-text-best.png</string>
+    <string name="popup_end_lvl_text_mode_easy">popup-end-lvl/popup-end-lvl-text-mode-easy.png</string>
+    <string name="popup_end_lvl_text_mode_expert">popup-end-lvl/popup-end-lvl-text-mode-expert.png</string>
+    <string name="popup_end_lvl_text_mode_normal">popup-end-lvl/popup-end-lvl-text-mode-normal.png</string>
+    <string name="popup_end_lvl_text_score">popup-end-lvl/popup-end-lvl-text-score.png</string>
+    <string name="popup_end_lvl_text_stars">popup-end-lvl/popup-end-lvl-text-stars.png</string>
+    <string name="popup_get_stars_text">popup-get-stars/popup-get-stars-text.png</string>
+    <string name="popup_achiv_lock">popup-shop/popup-achiv-lock.png</string>
+    <string name="popup_achiv_text">popup-shop/popup-achiv-text.png</string>
+    <string name="popup_shop_btn_buy">popup-shop/popup-shop-btn-buy.png</string>
+    <string name="popup_shop_btn_get_stars">popup-shop/popup-shop-btn-get-stars.png</string>
+    <string name="popup_shop_btn_purchased">popup-shop/popup-shop-btn-purchased.png</string>
+    <string name="popup_shop_stars_bg">popup-shop/popup-shop-stars-bg.png</string>
+    <string name="popup_shop_stuff_text_1">popup-shop/popup-shop-stuff-text-1.png</string>
+    <string name="popup_shop_stuff_text_2">popup-shop/popup-shop-stuff-text-2.png</string>
+    <string name="popup_shop_stuff_text_3">popup-shop/popup-shop-stuff-text-3.png</string>
+    <string name="popup_shop_stuff_text_4">popup-shop/popup-shop-stuff-text-4.png</string>
 
 </resources>

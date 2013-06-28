@@ -27,7 +27,6 @@ import android.content.res.Resources.NotFoundException;
 import android.opengl.GLException;
 import android.os.Handler;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.KeyEvent;
 
 import com.tooflya.billing.BillingHelper;
@@ -180,7 +179,7 @@ public class Game extends LayoutGameActivity implements IAsyncCallback {
 				 * 1280 GL_INVALID_ENUM 1281 GL_INVALID_VALUE 1282 GL_INVALID_OPERATION 1283 GL_STACK_OVERFLOW 1284 GL_STACK_UNDERFLOW 1285 GL_OUT_OF_MEMORY
 				 */
 				if (error != GL10.GL_NO_ERROR) {
-					throw new GLException(error, "OpenGL ES has error occurred: " + error);
+					//throw new GLException(error, "OpenGL ES has error occurred: " + error);
 				}
 			}
 
@@ -384,7 +383,12 @@ public class Game extends LayoutGameActivity implements IAsyncCallback {
 				Options.mButtonSound.play();
 			}
 
+			try {
 			mScreens.getCurrent().onBackPressed();
+			} catch(NullPointerException ex)
+			{
+				
+			}
 
 			return true;
 		}
