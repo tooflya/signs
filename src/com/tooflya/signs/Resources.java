@@ -213,7 +213,7 @@ public class Resources {
 			mPopupButtonTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_pause_popup_btn), 592, 983, 1, 1);
 			mPopupPauseTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_pause_popup_text), 578, 557, 1, 1);
 			mPopupNumbersTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-restart-popup-num-sprite.png", 668, 933, 3, 1);
-			mPopupRestartTextTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-restart-popup-text.png", 235, 975, 1, 1);
+			mPopupRestartTextTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_restart_popup_text), 235, 975, 1, 1);
 			mScoreNumbersTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-score-num-sprite.png", 608, 377, 13, 1);
 			mScoreNumbersBigTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-score-popup-num-sprite.png", 2, 900, 13, 1);
 			mScoreTextTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_score_text), 878, 377, 1, 1);
@@ -221,7 +221,7 @@ public class Resources {
 			mGameTableTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-table.png", 2, 101, 1, 1);
 			mBestScoreTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_timer_popup_bestscore), 847, 832, 1, 1);
 			mHarryTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_timer_popup_hurryup), 768, 879, 1, 1);
-			mHaveOneMinuteTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-timer-popup-minute.png", 736, 557, 1, 1);
+			mHaveOneMinuteTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_timer_popup_minute), 736, 557, 1, 1);
 			mAlertBackgroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-timer-popup.png", 485, 652, 1, 1);
 			mRedTimerSecTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_timer_text_sec_red), 951, 913, 1, 1);
 			mTimerSecTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_timer_text_sec), 951, 950, 1, 1);
@@ -348,7 +348,7 @@ public class Resources {
 			mPopupButtonTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_pause_popup_btn), 793, 1397, 1, 1);
 			mPopupPauseTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_pause_popup_text), 836, 983, 1, 1);
 			mPopupNumbersTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-restart-popup-num-sprite.png", 1851, 654, 3, 1);
-			mPopupRestartTextTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-restart-popup-text.png", 1143, 391, 1, 1);
+			mPopupRestartTextTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_restart_popup_text), 1143, 391, 1, 1);
 			mScoreNumbersTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-score-num-sprite.png", 1143, 202, 13, 1);
 			mScoreNumbersBigTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-score-popup-num-sprite.png", 1143, 477, 13, 1);
 			mScoreTextTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_score_text), 2, 1156, 1, 1);
@@ -356,7 +356,7 @@ public class Resources {
 			mGameTableTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-table.png", 2, 180, 1, 1);
 			mBestScoreTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_timer_popup_bestscore), 836, 1907, 1, 1);
 			mHarryTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_timer_popup_minute), 988, 1907, 1, 1);
-			mHaveOneMinuteTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-timer-popup-minute.png", 2, 1907, 1, 1);
+			mHaveOneMinuteTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_timer_popup_minute), 2, 1907, 1, 1);
 			mAlertBackgroundTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, "game-gui/game-gui-timer-popup.png", 1146, 1468, 1, 1);
 			mRedTimerSecTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_timer_text_sec_red), 1580, 438, 1, 1);
 			mTimerSecTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(mElementsTextureAtlas1, Game.mContext, Game.mContext.getString(R.string.game_gui_timer_text_sec), 1665, 438, 1, 1);
