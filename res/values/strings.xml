@@ -54,5 +54,11 @@
     <string name="popup_shop_stuff_text_2">popup-shop/popup-shop-stuff-text-2.png</string>
     <string name="popup_shop_stuff_text_3">popup-shop/popup-shop-stuff-text-3.png</string>
     <string name="popup_shop_stuff_text_4">popup-shop/popup-shop-stuff-text-4.png</string>
-
+    
+    <string name="main_menu_name_s_first">main-menu/main-menu-name-s-first.png</string>
+    <string name="main_menu_name_i">main-menu/main-menu-name-i.png</string>
+    <string name="main_menu_name_g">main-menu/main-menu-name-g.png</string>
+    <string name="main_menu_name_n">main-menu/main-menu-name-n.png</string>
+    <string name="main_menu_name_s">main-menu/main-menu-name-s-last.png</string>
+    
 </resources>

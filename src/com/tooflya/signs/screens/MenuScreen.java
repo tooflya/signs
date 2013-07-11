@@ -4,6 +4,7 @@ import org.anddev.andengine.entity.modifier.AlphaModifier;
 import org.anddev.andengine.entity.modifier.MoveModifier;
 import org.anddev.andengine.entity.modifier.MoveYModifier;
 import org.anddev.andengine.entity.modifier.RotationModifier;
+import org.anddev.andengine.input.touch.TouchEvent;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -470,8 +471,8 @@ public class MenuScreen extends Screen {
 		 */
 		@Override
 		public void onStarted() {
-			MenuScreen.this.mCreditsBackground.setVisible(true);
-			MenuScreen.this.mCreditsButton.setVisible(true);
+			MenuScreen.this.mCreditsBackground.setVisible(false);
+			MenuScreen.this.mCreditsButton.setVisible(false);
 		}
 	};
 
@@ -668,14 +669,26 @@ public class MenuScreen extends Screen {
 		this.mCreditsBackground = new Entity(Resources.mSoundBackgroundTextureRegion, buttons);
 		this.mCreditsButton = new ButtonScaleable(Resources.mCreditsButtonTextureRegion, buttons) {
 
+			/*
+			 * (non-Javadoc)
+			 * 
+			 * @see org.anddev.andengine.entity.shape.Shape#onAreaTouched(org.anddev.andengine.input.touch.TouchEvent, float, float)
+			 */
+			@Override
+			public boolean onAreaTouched(final TouchEvent pAreaTouchEvent, final float pTouchAreaLocalX, final float pTouchAreaLocalY) {
+				return false;
+			}
+			
 			/* (non-Javadoc)
 			 * @see com.tooflya.signs.entities.ButtonScaleable#onClick()
 			 */
 			@Override
 			public void onClick() {
-				MenuScreen.this.mMoveAllDown.reset();
+				//MenuScreen.this.mMoveAllDown.reset();
 			}
 		};
+		this.mCreditsBackground.setVisible(false);
+		this.mCreditsButton.setVisible(false);
 
 		this.mSettingsBackground = new Entity(Resources.mSettingsBackgroundTextureRegion, buttons);
 		this.mSettingsButton = new ButtonScaleable(Resources.mSettingsButtonTextureRegion, buttons) {

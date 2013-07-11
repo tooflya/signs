@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app">Signs</string>
+    <string name="app">عيون</string>
 
     <!-- Credits -->
     <string name="credits_1">CEO, Android Developer, Web Developer</string>
@@ -54,5 +54,11 @@
     <string name="popup_shop_stuff_text_2">popup-shop/popup-shop-stuff-text-2-ar.png</string>
     <string name="popup_shop_stuff_text_3">popup-shop/popup-shop-stuff-text-3-ar.png</string>
     <string name="popup_shop_stuff_text_4">popup-shop/popup-shop-stuff-text-4-ar.png</string>
+    
+    <string name="main_menu_name_s_first">main-menu/main-menu-name-s-first-ar.png</string>
+    <string name="main_menu_name_i">main-menu/main-menu-name-i-ar.png</string>
+    <string name="main_menu_name_g">main-menu/main-menu-name-g-ar.png</string>
+    <string name="main_menu_name_n">main-menu/main-menu-name-n-ar.png</string>
+    <string name="main_menu_name_s">main-menu/main-menu-name-s-last-ar.png</string>
 
 </resources>
